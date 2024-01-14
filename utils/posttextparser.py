@@ -11,6 +11,8 @@ from utils.voice import sanitize_text
 
 # working good
 def posttextparser(obj, *, tried: bool = False) -> List[str]:
+
+    print("inside the posttext parsers LMAOA OAOJAHA")
     text: str = re.sub("\n", " ", obj)
     try:
         nlp = spacy.load("en_core_web_sm")
